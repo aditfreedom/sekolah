@@ -1,0 +1,362 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+.header{
+    font-size: 10px;
+    font-family: 'arial';
+    width: 85%;
+    height: 8%;
+    background: rgb(130,37,133);
+    background: linear-gradient(90deg, rgba(130,37,133,1) 0%, rgba(60,9,121,1) 45%, rgba(0,212,255,1) 100%);
+    /* background-color: rgb(31, 136, 235); */
+    color: white;
+    position: fixed;
+
+    right: 0;
+    top: 0;
+    box-shadow: 0px 3px 10px grey;
+}
+
+.sidebar{
+    font-size: 10px;
+    width: 15%;
+    height: 100%;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    top: 0;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    float: left;
+    overflow-y:scroll;
+    overflow-x: hidden;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; 
+
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.usercontent{
+    font-size: 10px;
+    width: 100%;
+    height: 20%;
+    background-color: rgb(73, 73, 73);
+    color: white;
+    text-align: center;
+}
+
+.menucontent:hover{
+    background-color: rgb(141, 141, 141);
+}
+
+.menucontent{
+    font-weight: normal;
+    line-height: 50px;
+    font-size: 17px;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(48, 48, 48);
+    color: rgb(238, 238, 238);
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    transition: 0.4s;
+}
+.menucontent:before{
+    float: left;
+    content: url(../asset/dashboard.png);
+    margin-right: 25px;
+    margin-left: 8px;
+}
+
+
+/* menu guru */
+.guru{
+    background-color: rgb(48, 48, 48);
+    color:rgb(238, 238, 238);
+    cursor: pointer;
+    padding-left: 8px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 17px;
+    transition: 0.4s;
+  }
+  .guru:before{
+    float: left;
+    content: url(../asset/teacher.png);
+    margin-right: 25px;
+}
+  .guru:after {
+    content: '\002B';
+    color: #eeeeee;
+    font-weight: bold;
+    float: right;
+    margin-right: 5px;
+  }
+  
+  
+/* menu siswa   */
+  
+  .siswa{
+    background-color: rgb(48, 48, 48);
+    color:rgb(238, 238, 238);
+    cursor: pointer;
+    padding-left: 8px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 17px;
+    transition: 0.4s;
+  }
+  
+  .siswa:before{
+    float: left;
+    content: url(../asset/reading.png);
+    margin-right: 25px;
+}
+  .siswa:after {
+    content: '\002B';
+    color: #eeeeee;
+    font-weight: bold;
+    float: right;
+    margin-right: 5px;
+  }
+
+ 
+/* manu kelas */
+
+.kelas{
+  background-color: rgb(48, 48, 48);
+  color:rgb(238, 238, 238);
+  cursor: pointer;
+  padding-left: 8px;
+  width: 100%;
+  height: 50px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 17px;
+  transition: 0.4s;
+}
+
+.kelas:before{
+  float: left;
+  content: url(../asset/school.png);
+  margin-right: 25px;
+}
+.kelas:after {
+  content: '\002B';
+  color: #eeeeee;
+  font-weight: bold;
+  float: right;
+  margin-right: 5px;
+}
+
+
+
+
+
+/* menu kehadiran */
+
+  .kehadiran{
+    background-color: rgb(48, 48, 48);
+    color:rgb(238, 238, 238);
+    cursor: pointer;
+    padding-left: 8px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 17px;
+    transition: 0.4s;
+  }
+   
+  .kehadiran:before{
+    float: left;
+    content: url(../asset/check.png);
+    margin-right: 25px;
+}
+  .kehadiran:after {
+    content: '\002B';
+    color: #eeeeee;
+    font-weight: bold;
+    float: right;
+    margin-right: 5px;
+  }
+  
+  
+
+   /* menu mapel  */
+
+  .mapel{
+    background-color: rgb(48, 48, 48);
+    color:rgb(238, 238, 238);
+    cursor: pointer;
+    padding-left: 8px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 17px;
+    transition: 0.4s;
+  }
+  .mapel:before{
+    float: left;
+    content: url(../asset/open-book.png);
+    margin-right: 25px;
+}
+  .mapel:after {
+    content: '\002B';
+    color: #eeeeee;
+    font-weight: bold;
+    float: right;
+    margin-right: 5px;
+  }
+
+
+/* manu nilai */
+
+  .nilai{
+    background-color: rgb(48, 48, 48);
+    color:rgb(238, 238, 238);
+    cursor: pointer;
+    padding-left: 8px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 17px;
+    transition: 0.4s;
+  }
+  
+  .nilai:before{
+    float: left;
+    content: url(../asset/grade.png);
+    margin-right: 25px;
+}
+  .nilai:after {
+    content: '\002B';
+    color: #eeeeee;
+    font-weight: bold;
+    float: right;
+    margin-right: 5px;
+  }
+
+ 
+
+
+/* .logout */
+
+.logout:hover{
+    background-color: rgb(255, 115, 115);
+}
+
+.logout{
+    font-weight: normal;
+    line-height: 50px;
+    font-size: 17px;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(212, 53, 53);
+    color: rgb(238, 238, 238);
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    transition: 0.4s;
+}
+.logout:before{
+    float: left;
+    content: url(../asset/logout.png);
+    margin-right: 25px;
+    margin-left: 8px;
+}
+
+
+
+/* konten web */
+.isi{
+    margin: 55px auto auto 200px;
+    width: 85%;
+    height: 800px;
+    background-color: rgb(255, 255, 255);
+    overflow-y:scroll;
+    float: right;
+}
+
+.guru:hover, .siswa:hover, .kehadiran:hover, .mapel:hover, .nilai:hover, .kelas:hover{
+  background-color: rgb(141, 141, 141);
+}
+
+.active, .active:hover{
+  background-color: rgb(15, 111, 255);
+}
+
+.active:after {
+  content: "\2212";
+  color: #eeeeee;
+}
+
+
+
+.panel {
+  width: 100%;
+  text-align: left;
+  background-color: rgb(77, 77, 77);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.panelitem1:hover {
+  background-color: rgb(141, 141, 141);
+  transition: 0.4s;
+}
+
+.panelitem1{
+    font-size: 15px;
+    line-height: 50px;
+    width: 100%;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 10px;
+    padding-left: 8px;
+}
+.panelitem1:before{
+  float: left;
+  content: url(../asset/server.png);
+  margin-right: 25px;
+}
+.panelitem2{
+  font-size: 15px;
+  line-height: 50px;
+  width: 100%;
+  height: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 10px;
+  padding-left: 8px;
+}
+.panelitem2:hover {
+background-color: rgb(141, 141, 141);
+transition: 0.4s;
+}
+
+.panelitem2:before{
+float: left;
+content: url(../asset/add.png);
+margin-right: 25px;
+}
+
+.inputguru{
+  text-decoration: none;
+  color: rgb(238, 238, 238);
+}
